@@ -119,7 +119,7 @@ h1, h2, h3, h4, h5, h6 {
   height: 40px;
   font-size: 14px;
   transition: all 0.5s;
-  background:#fff
+  background: rgba(0, 0, 0, 0.1);
 }
 
 #topbar.topbar-scrolled {
@@ -488,7 +488,7 @@ h1, h2, h3, h4, h5, h6 {
 
 #hero:before {
   content: "";
-  background: rgba(0, 0, 0, 0.1);
+  /* background: rgba(0, 0, 0, 0.1); */
   position: absolute;
   bottom: 0;
   top: 0;
@@ -497,7 +497,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 #hero .container {
-  padding-top: 110px;
+  padding-bottom: 25%;
 }
 
 @media (max-width: 992px) {
@@ -520,7 +520,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 #hero h2 {
-  color: #0c0b09;
+  color: black;
   margin-bottom: 10px 0 0 0;
   font-size: 22px;
 }
@@ -555,7 +555,7 @@ h1, h2, h3, h4, h5, h6 {
 #hero .play-btn {
   width: 94px;
   height: 94px;
-  background: radial-gradient(#01af41 50%, rgba(205, 164, 94, 0.4) 52%);
+  /* background: radial-gradient(#01af41 50%, rgba(205, 164, 94, 0.4) 52%); */
   border-radius: 50%;
   display: block;
   position: relative;
@@ -625,7 +625,7 @@ h1, h2, h3, h4, h5, h6 {
 
 @media (min-width: 1024px) {
   #hero {
-    background-attachment: fixed;
+    /* background-attachment: fixed; */
   }
 }
 
@@ -780,16 +780,16 @@ section {
 # About
 --------------------------------------------------------------*/
 .about {
-  background: url("../img/about-bg.jpg") center center;
+  /* background: url("../img/about-bg.jpg") center center; */
   background-size: cover;
   position: relative;
   padding: 80px 0;
-  color: #fff !important;
+  /* color: #fff !important; */
 }
 
 .about:before {
   content: "";
-  background: rgba(0, 0, 0, 0.1);
+  /* background: rgba(0, 0, 0, 0.1); */
   position: absolute;
   bottom: 0;
   top: 0;
@@ -883,7 +883,7 @@ section {
 --------------------------------------------------------------*/
 .why-us .box {
   padding: 50px 30px;
-  box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
+  /* box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1); */
   transition: all ease-in-out 0.3s;
   /* background: #1a1814; */
 }
@@ -1083,10 +1083,10 @@ section {
 # Events
 --------------------------------------------------------------*/
 .events {
-  background: url(../img/person-holding-sliced-vegetable-2284166.jpg) center center no-repeat;
+  /* background: url(../img/person-holding-sliced-vegetable-2284166.jpg) center center no-repeat; */
   background-size: cover;
   position: relative;
-  
+  background-color: #fff;
 }
 
 /* .products {
@@ -1097,7 +1097,7 @@ section {
 
 .events::before {
   content: '';
-  background-color: rgba(0, 0, 0, 0.2);
+  /* background-color: rgba(0, 0, 0, 0.2); */
   position: absolute;
   top: 0;
   right: 0;
@@ -1125,7 +1125,7 @@ section {
 }
 
 .events .event-item {
-  color: #fff;
+  color: black;
 }
 
 .events .event-item h3 {
@@ -1175,7 +1175,7 @@ section {
   width: 12px;
   height: 12px;
   border-radius: 50%;
-  background-color: #ddd !important;
+  background-color: black !important;
 }
 
 .events .owl-dot.active {
@@ -1193,7 +1193,7 @@ section {
 # products
 --------------------------------------------------------------*/
 .products {
-  background: url(../img/agriculture-basket-close-up-colorful-219794.jpg) center center no-repeat;
+  /* background: url(../img/agriculture-basket-close-up-colorful-219794.jpg) center center no-repeat; */
   background-size: cover;
   position: relative;
 }
@@ -1206,7 +1206,7 @@ section {
 
 .products::before {
   content: '';
-  background-color: rgba(0, 0, 0, 0.1);
+  /* background-color: rgba(0, 0, 0, 0.1); */
   position: absolute;
   top: 0;
   right: 0;
@@ -1234,7 +1234,7 @@ section {
 }
 
 .products .event-item {
-  color: #fff;
+  color: black;
 }
 
 .products .event-item h3 {
@@ -1284,7 +1284,7 @@ section {
   width: 12px;
   height: 12px;
   border-radius: 50%;
-  background-color: #ddd !important;
+  background-color: black !important;
 }
 
 .products .owl-dot.active {
@@ -1478,7 +1478,7 @@ section {
   width: 12px;
   height: 12px;
   border-radius: 50%;
-  background-color: #ddd !important;
+  background-color: #fff !important;
 }
 
 .testimonials .owl-dot.active {
