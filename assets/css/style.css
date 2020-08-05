@@ -1800,7 +1800,7 @@ section {
   font-size: 18px;
   display: inline-block;
   background: #28251f;
-  color: #0c0b09;
+  /* color: #0c0b09; */
   line-height: 1;
   padding: 8px 0;
   margin-right: 4px;
