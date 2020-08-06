@@ -30,48 +30,17 @@
 
 </head>
 
-<script>
-  function includeHTML() {
-    var z, i, elmnt, file, xhttp;
-    /*loop through a collection of all HTML elements:*/
-    z = document.getElementsByTagName("*");
-    for (i = 0; i < z.length; i++) {
-      elmnt = z[i];
-      /*search for elements with a certain atrribute:*/
-      file = elmnt.getAttribute("w3-include-html");
-      if (file) {
-        /*make an HTTP request using the attribute value as the file name:*/
-        xhttp = new XMLHttpRequest();
-        xhttp.onreadystatechange = function() {
-          if (this.readyState == 4) {
-            if (this.status == 200) {elmnt.innerHTML = this.responseText;}
-            if (this.status == 404) {elmnt.innerHTML = "Page not found.";}
-            /*remove the attribute, and call this function once more:*/
-            elmnt.removeAttribute("w3-include-html");
-            includeHTML();
-          }
-        }      
-        xhttp.open("GET", file, true);
-        xhttp.send();
-        /*exit the function:*/
-        return;
-      }
-    }
-  };
-  </script>
-
-
 <body>
 
   <!-- ======= Top Bar ======= -->
-  <div id="topbar" class="d-flex align-items-center fixed-top">
+  <!-- <div id="topbar" class="d-flex align-items-center fixed-top">
     <div class="container d-flex">
       <div class="contact-info mr-auto">
         <i class="icofont-phone"></i> +91-9999999999
         <span class="d-none d-lg-inline-block"><i class="icofont-clock-time icofont-rotate-180"></i> Mon-Sat: 9:00 AM - 5:00 PM</span>
       </div>
     </div>
-  </div>
+  </div> -->
 
 
   <!-- ======= Header ======= -->
@@ -202,20 +171,6 @@
                 <br/>
                 The company is managed by team of high professionals who collaborate in developing and breeding new varieties, which are the key to future.  At Farmagen, we believe “one cannot solve the fourth-generation problems by the third-generation solutions coming from the second-generation systems with the first-generation management styles”. Solution can only be achieved through Research, Innovation, and Quality standards.
               </p>
-              <li><i class="icofont-check-circled"></i> Vision</li>
-              <p class="font-italic">
-                To reach the pinnacle of performance and emerge as one of the leading and eminent
-                agricultural sciences company in the world
-              </p>
-              <li><i class="icofont-check-circled"></i> Mission</li>
-              <p class="font-italic">
-                Leveraging latest farming technologies to deliver high quality seeds that maximize crop
-                productivity
-              </p>
-              <li><i class="icofont-check-circled"></i> Values</li>
-              <p class="font-italic">
-                Integrity, Professionalism Commitment, Honesty, Respect, Passion, Team Work
-              </p>
             </ul>
           </div>
         </div>
@@ -225,6 +180,43 @@
     <!-- End About Section -->
 
     <!-- ======= Why Us Section ======= -->
+
+    <div class="container" data-aos="fade-up">
+    <div class="cards-list">
+  
+      <div class="card 1">
+        <div class="card-body">
+          <div class="section-title">
+            <p>Vision</p>
+          </div>
+          </br>
+          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+        </div>
+      </div>
+      
+        <div class="card 2">
+          <div class="card-body">
+            <div class="section-title">
+              <p>Mission</p>
+            </div>
+            </br>
+            <p class="card-text">Leveraging latest farming technologies to deliver high quality seeds that maximize crop productivity.</p>
+          </div>
+      </div>
+      
+      <div class="card 3">
+        <div class="card-body">
+          <div class="section-title">
+            <p>Values</p>
+          </div>
+          </br>
+          <p class="card-text">Integrity, Professionalism Commitment, Honesty, Respect, Passion, Team Work.</p>
+        </div>
+      </div>
+        
+      </div>
+    </div>
+    
 
 
     <section id="products" class="products">
@@ -308,17 +300,17 @@
         </a>
 
 
-        <a href="eggplant.html">
+        <a href="virat.html">
           <div class="row event-item">
             <div class="col-lg-6 pt-4 pt-lg-0 content">
-              <h3>Eggplant</h3>
+              <h3>Virat</h3>
               <div class="price">
                 
               </div>
               <p class="font-italic">
-                Eggplant is a plant species in the nightshade family Solanaceae. Solanum melongena is grown worldwide for its edible fruit.
+                Virat is a plant species in the nightshade family Solanaceae. Solanum melongena is grown worldwide for its edible fruit.
 
-                Most commonly purple, the spongy, absorbent fruit is used in several cuisines. Typically used as a vegetable in cooking, it is a berry by botanical definition. As a member of the genus Solanum, it is related to the tomato and potato. Like the tomato, its skin and seeds can be eaten, but, like the potato, it is usually eaten cooked. Eggplant is nutritionally low in macronutrient and micronutrient content, but the capability of the fruit to absorb oils and flavors into its flesh through cooking expands its use in the culinary arts.
+                Most commonly purple, the spongy, absorbent fruit is used in several cuisines. Typically used as a vegetable in cooking, it is a berry by botanical definition. As a member of the genus Solanum, it is related to the tomato and potato. Like the tomato, its skin and seeds can be eaten, but, like the potato, it is usually eaten cooked. Virat is nutritionally low in macronutrient and micronutrient content, but the capability of the fruit to absorb oils and flavors into its flesh through cooking expands its use in the culinary arts.
               </p>
             </div>
             <div class="col-lg-6">
@@ -362,7 +354,7 @@
       </div>
 
       <div data-aos="fade-up">
-        <iframe style="border:0; width: 100%; height: 350px;" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7728.184592591251!2d75.5063939249661!3d14.421842700441525!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bbbda91524eae3d%3A0xc04284570152be27!2sRattihalli%2C%20Karnataka%20581116!5e0!3m2!1sen!2sin!4v1593943313254!5m2!1sen!2sin" frameborder="0" allowfullscreen></iframe>
+        <iframe style="border:0; width: 100%; height: 350px;" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1930.411344040675!2d75.63532585810235!3d14.609174492940696!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bb97e6c44a3cbed%3A0x9dda028e7438fc93!2sUmashankar%20Nagar%2C%20Sri%20Ram%20Nagar%2C%20Gouri%20Shankar%20Nagar%2C%20Ranebennur%2C%20Karnataka%20581115!5e0!3m2!1sen!2sin!4v1596721552001!5m2!1sen!2sin" frameborder="0" allowfullscreen></iframe>
       </div>
 
       <div class="container" data-aos="fade-up">
@@ -439,11 +431,7 @@
     </section><!-- End Contact Section -->
    
   </main><!-- End #main -->
-  <div w3-include-html="footer.html"></div>
-
-  <script>
-    includeHTML();
-  </script>
+  <div id="footer"></div>
 
   <div id="preloader">
   </div>
@@ -462,8 +450,11 @@
   <!-- Template Main JS File -->
   <script src="assets/js/main.js"></script>
   
-
-
+  <script> 
+    $(function(){
+      $("#footer").load("footer.html"); 
+    });
+  </script
 
 
 </body>
