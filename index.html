@@ -30,6 +30,37 @@
 
 </head>
 
+<script>
+  function includeHTML() {
+    var z, i, elmnt, file, xhttp;
+    /*loop through a collection of all HTML elements:*/
+    z = document.getElementsByTagName("*");
+    for (i = 0; i < z.length; i++) {
+      elmnt = z[i];
+      /*search for elements with a certain atrribute:*/
+      file = elmnt.getAttribute("w3-include-html");
+      if (file) {
+        /*make an HTTP request using the attribute value as the file name:*/
+        xhttp = new XMLHttpRequest();
+        xhttp.onreadystatechange = function() {
+          if (this.readyState == 4) {
+            if (this.status == 200) {elmnt.innerHTML = this.responseText;}
+            if (this.status == 404) {elmnt.innerHTML = "Page not found.";}
+            /*remove the attribute, and call this function once more:*/
+            elmnt.removeAttribute("w3-include-html");
+            includeHTML();
+          }
+        }      
+        xhttp.open("GET", file, true);
+        xhttp.send();
+        /*exit the function:*/
+        return;
+      }
+    }
+  };
+  </script>
+
+
 <body>
 
   <!-- ======= Top Bar ======= -->
@@ -166,9 +197,10 @@
             <ul>
               <li><i class="icofont-check-circled"></i> About</li>
               <p class="font-italic">
-                Farmagen has emerged in order to provide quality seeds, easily accessible and affordable
-                for farmers, Farmagen depends on Research and Development in the pursuit of innovation
-                to serve its customers the best quality seeds they deserve
+                FARMAGEN CROP SCIENCE is instituted by dynamic team of entrepreneurs with a dream to transform Indian farming by providing one stop solutions to farmers. FARMAGEN CROP SCIENCE is an innovative breeding company specialized in creating vegetable hybrid seeds. Our breeding program is characterized by a strong focus on nutrient value and high yield. Attaining maximum quality standards is what drives the company to develop ingenious vegetable hybrids. Only high-quality seeds can ensure crop productivity and help farmers in reaping more benefits using less resources. 
+                <br/>
+                <br/>
+                The company is managed by team of high professionals who collaborate in developing and breeding new varieties, which are the key to future.  At Farmagen, we believe “one cannot solve the fourth-generation problems by the third-generation solutions coming from the second-generation systems with the first-generation management styles”. Solution can only be achieved through Research, Innovation, and Quality standards.
               </p>
               <li><i class="icofont-check-circled"></i> Vision</li>
               <p class="font-italic">
@@ -405,70 +437,13 @@
 
       </div>
     </section><!-- End Contact Section -->
-
    
   </main><!-- End #main -->
+  <div w3-include-html="footer.html"></div>
 
-  <!-- ======= Footer ======= -->
-  <footer id="footer">
-    <div class="footer-top">
-      <div class="container">
-        <div class="row">
-
-          <div class="col-lg-3 col-md-6">
-            <div class="footer-info">
-              <h3>Farmagen</h3>
-              <p>
-                XXXXX <br>
-                XXXXX<br><br>
-                <strong>Phone:</strong> +91-9999999999<br>
-                <strong>Email:</strong> xxxx@yyyyy.com<br>
-              </p>
-              <div class="social-links mt-3">
-                <a href="#" class="twitter"><i class="bx bxl-twitter"></i></a>
-                <a href="#" class="facebook"><i class="bx bxl-facebook"></i></a>
-                <a href="#" class="instagram"><i class="bx bxl-instagram"></i></a>
-                <a href="#" class="google-plus"><i class="bx bxl-skype"></i></a>
-                <a href="#" class="linkedin"><i class="bx bxl-linkedin"></i></a>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-2 col-md-6 footer-links">
-            <h4>Useful Links</h4>
-            <ul>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">xxxx</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">xxxx</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">xxxx</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">Terms of service</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">Privacy policy</a></li>
-            </ul>
-          </div>
-
-          <div class="col-lg-3 col-md-6 footer-links">
-            <h4>Our Services</h4>
-            <ul>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">xxxxx</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">xxxxx</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">xxxxx</a></li>
-            </ul>
-          </div>
-
-          <div class="col-lg-4 col-md-6 footer-newsletter">
-            <h4>Our Newsletter</h4>
-            <p>Please subscribe to receive our newsletter</p>
-            <form action="" method="post">
-              <input type="email" name="email"><input type="submit" value="Subscribe">
-            </form>
-
-          </div>
-
-        </div>
-      </div>
-    </div>
-
-    
-  </footer><!-- End Footer -->
+  <script>
+    includeHTML();
+  </script>
 
   <div id="preloader">
   </div>
@@ -486,6 +461,10 @@
 
   <!-- Template Main JS File -->
   <script src="assets/js/main.js"></script>
+  
+
+
+
 
 </body>
 
