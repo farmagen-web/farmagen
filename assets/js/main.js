@@ -1,6 +1,6 @@
 /**
-* Template Name: Restaurantly - v1.0.0
-* Template URL: https://bootstrapmade.com/restaurantly-restaurant-template/
+* Template Name: Farmagen - v1.0.0
+* Template URL: Farmagen
 * Author: BootstrapMade.com
 * License: https://bootstrapmade.com/license/
 */
