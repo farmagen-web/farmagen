@@ -24,7 +24,7 @@ a:hover {
 }
 
 h1, h2, h3, h4, h5, h6 {
-  font-family: "Playfair Display", serif;
+  font-family: "Open Sans", sans-serif;
 }
 
 /*--------------------------------------------------------------
@@ -189,7 +189,7 @@ h1, h2, h3, h4, h5, h6 {
   font-weight: 300;
   letter-spacing: 1px;
   text-transform: uppercase;
-  font-family: "Poppins", sans-serif;
+  font-family: "Open Sans", sans-serif;
 }
 
 #header .logo a {
@@ -290,7 +290,7 @@ h1, h2, h3, h4, h5, h6 {
 
 .nav-menu .drop-down > a:after {
   content: "\ea99";
-  font-family: IcoFont;
+  font-family: "Open Sans", sans-serif;
   padding-left: 5px;
 }
 
@@ -311,7 +311,7 @@ h1, h2, h3, h4, h5, h6 {
 
 .nav-menu .drop-down .drop-down > a:after {
   content: "\eaa0";
-  font-family: IcoFont;
+  font-family: "Open Sans", sans-serif;
   position: absolute;
   right: 15px;
 }
@@ -406,7 +406,7 @@ h1, h2, h3, h4, h5, h6 {
 
 .mobile-nav .drop-down > a:after {
   content: "\ea99";
-  font-family: IcoFont;
+  font-family: "Open Sans", sans-serif;
   padding-left: 10px;
   position: absolute;
   right: 15px;
@@ -512,7 +512,7 @@ h1, h2, h3, h4, h5, h6 {
   font-weight: 700;
   line-height: 56px;
   color: #0c0b09;
-  font-family: "Poppins", sans-serif;
+  font-family: "Open Sans", sans-serif;
 }
 
 #hero h1 span {
@@ -703,7 +703,7 @@ section {
   letter-spacing: 2px;
   text-transform: uppercase;
   color: #aaaaaa;
-  font-family: "Poppins", sans-serif;
+  font-family: "Open Sans", sans-serif;
 }
 
 .section-title h2::after {
@@ -720,7 +720,7 @@ section {
   margin: 0;
   font-size: 36px;
   font-weight: 700;
-  font-family: "Playfair Display", serif;
+  font-family: "Open Sans", sans-serif;
   color: #01af41;
 }
 
@@ -942,7 +942,7 @@ section {
   margin-bottom: 10px;
   transition: all ease-in-out 0.3s;
   border-radius: 50px;
-  font-family: "Playfair Display", serif;
+  font-family: "Open Sans", sans-serif;
 }
 
 .menu #menu-flters li:hover, .menu #menu-flters li.filter-active {
@@ -982,7 +982,7 @@ section {
   top: -4px;
   z-index: 1;
   color: #bab3a6;
-  font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+  font-family: "Open Sans", sans-serif;
 }
 
 .menu .menu-content a {
@@ -1012,7 +1012,7 @@ section {
   margin-left: 85px;
   font-style: italic;
   font-size: 14px;
-  font-family: "Poppins", sans-serif;
+  font-family: "Open Sans", sans-serif;
   color: rgba(255, 255, 255, 0.5);
 }
 
@@ -1618,7 +1618,7 @@ section {
   font-size: 18px;
   font-weight: 500;
   margin-bottom: 5px;
-  font-family: "Poppins", sans-serif;
+  font-family: "Open Sans", sans-serif;
 }
 
 .contact .info p {
@@ -1785,14 +1785,14 @@ section {
   line-height: 1;
   font-weight: 300;
   text-transform: uppercase;
-  font-family: "Poppins", sans-serif;
+  font-family: "Open Sans", sans-serif;
 }
 
 #footer .footer-top .footer-info p {
   font-size: 14px;
   line-height: 24px;
   margin-bottom: 0;
-  font-family: "Playfair Display", serif;
+  font-family: "Open Sans", sans-serif;
   color: #0c0b09;
 }
 
@@ -1988,7 +1988,7 @@ box-shadow: 5px 5px 30px 7px rgba(0,0,0,0.25), -5px -5px 30px 7px rgba(0,0,0,0.2
 .card .card_title {
   text-align: center;
   border-radius: 0px 0px 40px 40px;
-  font-family: sans-serif;
+  font-family: "Open Sans", sans-serif;
   font-weight: bold;
   font-size: 30px;
   margin-top: -80px;
