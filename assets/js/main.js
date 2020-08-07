@@ -6,7 +6,6 @@
 */
 !(function($) {
   "use strict";
-
   // Preloader
   $(window).on('load', function() {
     if ($('#preloader').length) {
@@ -169,15 +168,21 @@
     autoplay: true,
     dots: true,
     loop: true,
-    items: 1
+    items: 1,
+    nav: true,
+    autoplayHoverPause: true,
+    navText:["<div class='nav-btn prev-slide'><i class='fa fa-chevron-left'></i></div>","<div class='nav-btn next-slide'><i class='fa fa-chevron-right'></i></div>"],
   });
 
   // Testimonials carousel (uses the Owl Carousel library)
   $(".testimonials-carousel").owlCarousel({
-    autoplay: true,
+    autoplay: false,
     dots: true,
     loop: true,
+    nav    : true,
     autoplayTimeout: 6000,
+    autoplayHoverPause: true,
+    navText:["<div class='nav-btn prev-slide'><i class='fa fa-chevron-left'></i></div>","<div class='nav-btn next-slide'><i class='fa fa-chevron-right'></i></div>"],
     responsive: {
       0: {
         items: 1
