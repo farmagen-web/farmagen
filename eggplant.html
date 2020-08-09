@@ -38,7 +38,7 @@
   <!-- <div id="topbar" class="d-flex align-items-center fixed-top">
     <div class="container d-flex">
       <div class="contact-info mr-auto">
-        <i class="icofont-phone"></i> +91-9999999999
+        <i class="icofont-phone"></i> +91 99729 66621
         <span class="d-none d-lg-inline-block"><i class="icofont-clock-time icofont-rotate-180"></i> Mon-Sat: 9:00 AM - 5:00 PM</span>
       </div>
     </div>
@@ -52,6 +52,7 @@
             <!-- Uncomment below if you prefer to use an image logo -->
             <a href="index.html" class="logo mr-auto"><img src="assets/img/Farmagen Logo Final (SVG).svg" alt=""
                     class="img-fluid"></a>
+            <div id="productsDropDown"></div>
 
         </div>
     </header><!-- End Header -->
@@ -74,65 +75,65 @@
                         <h3>Agronomy for growing Eggplant</h3><br /><br />
                         <ul>
                             <li><i class="icofont-check-circled"></i> Soil</li>
-                            <p class="font-italic">
+                            <p >
                                 Well drained sandy loam soil is suitable
                             </p>
                             <li><i class="icofont-check-circled"></i> Sowing time</li>
-                            <p class="font-italic">
+                            <p >
                                 As per the regional practices and timings
                             </p>
                             <li><i class="icofont-check-circled"></i> Optimum temp. for germination</li>
-                            <p class="font-italic">
+                            <p >
                                 25-30<span>&#176;</span>C
                             </p>
 
                             <li><i class="icofont-check-circled"></i> Transplanting</li>
-                            <p class="font-italic">
+                            <p >
                                 30-35 days after sowing
                             </p>
 
                             <li><i class="icofont-check-circled"></i> Spacing</li>
-                            <p class="font-italic">
+                            <p >
                                 Row to Row: 75-90 cm, Plant to Plant: 60-75 cm
                             </p>
 
                             <li><i class="icofont-check-circled"></i> Seed rate</li>
-                            <p class="font-italic">
+                            <p >
                                 100 gm/acre
                             </p>
 
                             <li><i class="icofont-check-circled"></i> Preparation of Main field</li>
-                            <p class="font-italic">
+                            <p >
                                 Deep ploughing and harrowing. Apply well decomposed FYM @ 7-8 tons per acre followed by harrowing to mix in the soil thoroughly. Open the ridges and furrows at required spacing. Irrigate the field and make the holes at the recommended spacing. Transplanting should be done during afternoon, after transplanting light irrigation should be given for quick and better establishment
                             </p>
 
                             <li><i class="icofont-check-circled"></i> Chemical Fertilizer</li>
-                            <p class="font-italic">
+                            <p >
                                 Fertilizer requirement varies with soil fertility
                             </p>
 
                             <li><i class="icofont-check-circled"></i> First dose 6-8 days after transplanting
                             </li>
-                            <p class="font-italic">
+                            <p >
                                 50:50:60 NPK kg/acre
                             </p>
 
 
                             <li><i class="icofont-check-circled"></i> Second dose 20-25 days after first application
                             </li>
-                            <p class="font-italic">
+                            <p >
                                 25:50:60 NPK kg/acre
 
                             </p>
 
                             <li><i class="icofont-check-circled"></i> Third dose 20-25 days after second application</li>
-                            <p class="font-italic">
+                            <p >
                                 25:50:60 NPK kg/acre Calcium nitrate (1%solution) should be sprayed at the time of flowering increases fruit-set
 
                             </p>
 
                             <li><i class="icofont-check-circled"></i> Plant Protection</li>
-                            <p class="font-italic">
+                            <p >
                                 Follow plant protection measures as and when require
                             </p>
 
@@ -154,37 +155,40 @@
 
                 <div class="row">
                     <div class="col-lg-4">
+                        <img src="assets/img/sub-products/VIRAT.jpg" alt=""
+                        class="img-fluid pointer" style="height:350px" data-toggle="collapse" data-target="#viratCollapse" aria-expanded="false" aria-controls="viratCollapse">
+
                         <div class="box" data-aos="zoom-in" data-aos-delay="100">
                             <span>Virat</span>
-                            <div class="pt-4 pt-lg-0 order-2 order-lg-1 content">
+                            <div class="pt-4 pt-lg-0 order-2 order-lg-1 content collapse" id='viratCollapse'>
                                 <ul>
                                     <li> Fruit shape</li>
-                                    <p class="font-italic">
+                                    <p >
                                         Oval
                                     </p>
 
                                     <li> Flesh color</li>
-                                    <p class="font-italic">
+                                    <p >
                                         Purple white variegated
                                     </p>
 
                                     <li> Avg. fruit weight</li>
-                                    <p class="font-italic">
+                                    <p >
                                         60-70 g
                                     </p>
 
                                     <li> Spines on leaf and fruit</li>
-                                    <p class="font-italic">
+                                    <p >
                                         No
                                     </p>
 
                                     <li> Features</li>
-                                    <p class="font-italic">
+                                    <p >
                                         Good yield
                                     </p>
 
                                     <li> Growing season</li>
-                                    <p class="font-italic">
+                                    <p >
                                         Kharif & Rabi
                                     </p>
                                 </ul>
@@ -230,7 +234,8 @@
   
   <script> 
     $(function(){
-      $("#footer").load("footer.html"); 
+      $("#footer").load("footer.html");
+            $("#productsDropDown").load("productsDropDown.html"); 
     });
   </script
 

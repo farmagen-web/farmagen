@@ -2101,3 +2101,8 @@ span.img-text {
 span.img-text:hover {
   color: #2caae1;
 }
+
+
+.pointer {
+  cursor: pointer;
+}
