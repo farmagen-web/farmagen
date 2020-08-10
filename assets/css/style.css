@@ -904,7 +904,7 @@ section {
 }
 
 .why-us .box p {
-  color: #aaaaaa;
+  color: #01af41;
   font-size: 15px;
   margin: 0;
   padding: 0;
@@ -2105,4 +2105,10 @@ span.img-text:hover {
 
 .pointer {
   cursor: pointer;
+}
+
+.card-icon {
+  font-size:60px !important;
+  color:#01af41;
+  margin-top: -11%;
 }
